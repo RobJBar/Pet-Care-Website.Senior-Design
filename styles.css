@@ -119,3 +119,7 @@ h2 {
     top: 10px; 
     left: 10px;
 }
+
+.back-home:hover {
+    background-color: #c67171;
+}
