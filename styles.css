@@ -21,9 +21,10 @@ body {
 /* Header Styling */
 .header {
      width: 100%;
-     height: 40px;
+     height: 55px;
      background-color:#de8f94;
      border-bottom: 3px solid #d48a8a;
+     position: relative;
 }
 
 h1 {
@@ -64,7 +65,13 @@ h2 {
     display: block;
 }
 
-.buttons-container {
+.icon-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+
+/* .buttons-container { 
     position: absolute;
     left: 20px;
     top: 40%;
@@ -72,7 +79,16 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+} */
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
 }
+
 
 .content-area {
     margin: auto;
