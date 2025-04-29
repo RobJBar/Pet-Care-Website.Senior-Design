@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Bonding </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header"></header>
+
+    <h1>Pet Bonding Tips</h1>
+
+    <!-- Separator line -->
+    <div class="separator"></div>
+
+    <div class="main-container">
+        <div class="buttons-container">
+            <button class="icon-button" style="background-image: url('catbutton.jpg');" onclick="showContent('cat')"></button>
+            <button class="icon-button" style="background-image: url('dogbutton.jpg');" onclick="showContent('dog')"></button>
+        </div>
+        <div class="content-area">
+            <div id="display-content" class="display-box">Please choose your pet</div>
+        </div>
+    </div>
+    <script>
+        function showContent(pet) {
+            const contentDiv = document.getElementById("display-content");
+            let content = "";
+            
+            if (pet === "cat") {
+                content = `<h2>Bonding with Your Cat</h2>
+                <p> Contrary to common opinion, cats need their owners to give them the same level of care as dogs, but in much more subtle ways. Since cats are far more independent than dogs, developing a close relationship with them can be a little more difficult. Giving them a sense of control over interactions is essential to a healthy partnership. By providing treats and using slow blinks to demonstrate trust, you can encourage your cat to approach you rather than attempting to get their attention. Play is just as vital, especially when it involves interactive toys that make cats feel more at home and connected to you. They also feel more secure in a comfortable setting, which includes warm hiding places, scratching posts, and a regular schedule. In the end, developing trust with a cat takes patience, regularity, and a readiness to allow them to choose when to show affection!</p>
+                <img src='cat1.jpg' alt='Cat'> <img src= 'cat2.jpg' alt= 'Cat'>`;
+            } else if (pet === "dog") {
+                content = `<h2>Bonding with Your Dog</h2>
+                <p> Establishing shared experiences, consistency, and trust are key to developing a close relationship with your dog. Dogs are social creatures by nature, seeking friendship and direction from their owners, so a strong bond can be formed by spending time together. Your relationship can be strengthened by regular walks outside, playing interactive games like fetch, and even something as simple as quiet moments together. Regular mealtimes, exercise, and affection are all important for a dog's sense of safety and comfort, as dogs thrive on routine. If possible, training is another great way to make your relationship better. Building mutual understanding and trust between pet and owner can be achieved through teaching simple commands, employing positive reinforcement, and rewarding good behavior with treats and praise. Ultimately, if you are kind, patient, and attentive to your dog, they will feel safe, loved, and form a strong bond with you.</p>
+                <img src='dog1.jpg' alt='Dog'> <img src='dog2.jpg' alt='Dog'>`;
+            }
+            contentDiv.innerHTML = content;
+        }
+    </script>
+</body>
+</html>
