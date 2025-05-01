@@ -141,7 +141,7 @@ section::after {
     border-radius: 25px;
 }
 
-.buttonsContainer {
+/* .buttonsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,7 +149,14 @@ section::after {
     margin-top: 100px;
     position: absolute; 
     
+}*/
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 40px;
 }
+
 
 .FYP_Img img{
     max-width: 50%;
