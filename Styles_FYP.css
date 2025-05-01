@@ -162,3 +162,12 @@ section::after {
     max-width: 50%;
     border-radius: 5%;
 }
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
