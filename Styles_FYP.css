@@ -141,7 +141,7 @@ section::after {
     border-radius: 25px;
 }
 
-.buttonsContainer {
+/* .buttonsContainer {
     position: relative;
     left: 20px;
     top: 40%;
@@ -150,7 +150,16 @@ section::after {
     display: flex;
     flex-direction: column;
     gap: 50px;
+}*/
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 80px; /* Pushes both buttons lower */
 }
+
 
 .FYP_Img img{
     max-width: 50%;
