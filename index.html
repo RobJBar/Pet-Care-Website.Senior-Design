@@ -147,15 +147,16 @@
 
     /* Clickable Icon */
     .icon1, .icon2, .icon3, .icon4 {
-        width: 80px;
-        height: 80px;
-        background-size: cover;
-        background-position: center;
-        border-radius: 50%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    }
+    width: 100px;
+    height: 100px;
+    background-size: contain; /* changed from cover */
+    background-position: center;
+    background-repeat: no-repeat; /* prevents tiling */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 
     /* Custom Image Backgrounds */
     .icon1 {
